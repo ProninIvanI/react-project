@@ -1,0 +1,11 @@
+.collapsedProfile {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.fieldForWrite {
+  margin: 5px;
+  width: auto;
+  height: auto;
+}

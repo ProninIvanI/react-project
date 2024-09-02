@@ -1,0 +1,23 @@
+.profile {
+  margin-top: 15px;
+  display: flex;
+  width: min-content;
+  height: max-content;
+  border: 1px solid black;
+}
+
+.fieldForWrite {
+  display: flex;
+  margin: 5px;
+  width: auto;
+  height: auto;
+}
+
+.areaInformationProfile {
+  width: auto;
+  height: auto;
+}
+
+.areaButtonSwitchProfile {
+  background-color: grey;
+}

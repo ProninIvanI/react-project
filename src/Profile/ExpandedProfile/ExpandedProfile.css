@@ -1,0 +1,16 @@
+.expandedProfile {
+  height: auto;
+  width: auto;
+}
+
+.rowProfile {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.areaButtonDelete {
+  display: flex;
+  justify-content: flex-end;
+
+}
