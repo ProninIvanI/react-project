@@ -1,12 +1,15 @@
-import { ProfileContext } from "../../ProfileContextProvider";
 import "./Input.css";
-import { useContext } from "react";
+import { useDispatch } from 'react-redux'
 
 export function Input({ data, field, id }) {
-  const { updateProfile } = useContext(ProfileContext);
+  const dispatch = useDispatch();
 
   const handleChange = (event) => {
-    updateProfile(id, field, event.target.value);
+    const value = event.target.value
+    dispatch({
+      type: 'UPDATE_PROFILE',
+      payload: {id, field, value}
+    });
   };
 
   return (

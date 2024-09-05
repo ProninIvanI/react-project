@@ -1,3 +1,5 @@
+//в этой ветке заменили на редукс
+
 import React, { createContext, useState } from "react";
 import { dataMen } from "./Data/DataMen";
 

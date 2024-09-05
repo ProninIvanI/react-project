@@ -1,13 +1,15 @@
 import Button from "../Button/Button";
 import deleteImages from "../../images/delete.svg";
 import "./DeleteButton.css";
-import { useContext } from "react";
-import { ProfileContext } from "../../ProfileContextProvider";
+import { useDispatch } from "react-redux";
 
 export default function DeleteButton({ id }) {
-  const { handleClickDeleteMen } = useContext(ProfileContext);
+  const dispatch = useDispatch();
   const handleClick = () => {
-    handleClickDeleteMen(id);
+    dispatch({
+      type: "HANDLE_CLICK_DELETE_MEN",
+      payload: { id },
+    });
   };
 
   return (
